@@ -1,0 +1,15 @@
+
+
+<h3> <%= @input %> </h3>
+
+<h3>
+<% if @input == 'I am going to work' %>
+  <%= 'Great' %>
+<% elsif @input[-1] == '?' %>
+  <%= "Silly question, get dressed and go to work!" %>
+<% else %>
+  <%= "I don't care, get dressed and go to work!" %>
+<% end %>
+</h3>
+
+<%= link_to 'Ask a another question', ask_path %>
